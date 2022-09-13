@@ -6,9 +6,10 @@
   "client": [
     "DebugMixin",
     "KeyboardMixin",
+    "bossbar.BossbarMixin",
     "chunk.ChunkBuilderMixin",
-    "chunk.ClientChunkMapMixin",
     "chunk.ClientChunkManagerMixin",
+    "chunk.ClientChunkMapMixin",
     "scoreboard.ScoreboardMixin"
   ]
 }
