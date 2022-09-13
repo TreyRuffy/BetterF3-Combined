@@ -38,7 +38,22 @@ public final class GeneralOptions {
    */
   public static int backgroundColor = 0x6F505050;
   /**
-   * Hides the sidebar while looking at F3.
+   * Hides the sidebar while looking at the F3 menu.
    */
   public static boolean hideSidebar = true;
+
+  /**
+   * Hides the bossbar while looking at the F3 menu.
+   */
+  public static boolean hideBossbar = true;
+
+  /**
+   * Always shows the profiler when using F3.
+   */
+  public static boolean alwaysEnableProfiler = false;
+
+  /**
+   * Always shows the TPS graph when using F3.
+   */
+  public static boolean alwaysEnableTPS = false;
 }

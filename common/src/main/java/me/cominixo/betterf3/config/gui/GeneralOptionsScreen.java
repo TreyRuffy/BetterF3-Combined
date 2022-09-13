@@ -86,6 +86,24 @@ public final class GeneralOptionsScreen {
     .setSaveConsumer(newValue -> GeneralOptions.hideSidebar = newValue)
     .build());
 
+    general.addEntry(entryBuilder.startBooleanToggle(Text.translatable("config.betterf3.bossbar"), GeneralOptions.hideBossbar)
+    .setDefaultValue(true)
+    .setTooltip(Text.translatable("config.betterf3.bossbar.tooltip"))
+    .setSaveConsumer(newValue -> GeneralOptions.hideBossbar = newValue)
+    .build());
+
+    general.addEntry(entryBuilder.startBooleanToggle(Text.translatable("config.betterf3.always_enable_profiler"), GeneralOptions.alwaysEnableProfiler)
+    .setDefaultValue(false)
+    .setTooltip(Text.translatable("config.betterf3.always_enable_profiler.tooltip"))
+    .setSaveConsumer(newValue -> GeneralOptions.alwaysEnableProfiler = newValue)
+    .build());
+
+    general.addEntry(entryBuilder.startBooleanToggle(Text.translatable("config.betterf3.always_enable_tps_graph"), GeneralOptions.alwaysEnableTPS)
+    .setDefaultValue(false)
+    .setTooltip(Text.translatable("config.betterf3.always_enable_tps_graph.tooltip"))
+    .setSaveConsumer(newValue -> GeneralOptions.alwaysEnableTPS = newValue)
+    .build());
+
     builder.transparentBackground();
     return builder;
   }
